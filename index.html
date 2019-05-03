@@ -13,7 +13,7 @@
 
 <tw-storydata name="Paper Batch" startnode="1" creator="Twine" creator-version="2.3.1" ifid="53DEC98B-1C55-4658-B5B0-1057B47F905F" zoom="1" format="Harlowe" format-version="3.0.2" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">
-</script><tw-passagedata pid="1" name="The Assignemnt" tags="" position="1014,174" size="100,100">It is late April and for your Media Adaptation class, you have been tasked with writing an essay demonstrating an understanding of the concepts learned in class. While this class has no impact on your ability to graduate, you feel compelled to do well anyway. You have a performance lab due Sunday and a Senior Project Milestone on Wednesday. What do you do?
+</script><tw-passagedata pid="1" name="The Assignment" tags="" position="1014,174" size="100,100">It is late April and for your Media Adaptation class, you have been tasked with writing an essay demonstrating an understanding of the concepts learned in class. While this class has no impact on your ability to graduate, you feel compelled to do well anyway. You have a performance lab due Sunday and a Senior Project Milestone on Wednesday. What do you do?
 
 [[Watch Netflix]]
 
@@ -56,7 +56,22 @@ You really need to work on your homework, but spending time with your partner be
 
 [[Writeup]]
 
-[[Play Again-&gt;The Assignemnt]] </tw-passagedata><tw-passagedata pid="10" name="Writeup" tags="" position="881,1310" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="11" name="Pull up A Theory of Adaptation" tags="" position="177,576" size="100,100">You pull up your textbook, now invigorated by the challenge before you. You Have so many ideas you don&#39;t know where to start. You put your fingers to the keyboard and let the words flow out.
+[[Play Again-&gt;The Assignment]] </tw-passagedata><tw-passagedata pid="10" name="Writeup" tags="" position="881,1310" size="100,100">This text based adventure game was created for my Media Adaptation class at the Rochester Institute of Technology in Spring 2019. The project follows a similar structure to Netflix&#39;s show //Bandersnatch//. The show is an intertextual reference to Lewis Carroll&#39;s works(1). In the show, Stefan is working on adapting a choose your own adventure book into a game. This project was an attempt to adapt that show into a choose your own adventure game as well. In the Netflix show, Stefan explores questions of his own ability to make decisions, the impact of those decisions, and the meaning of his actions while ultimately killing himself, his father, he hero, or his game, depending on which branch of the narrative you follow. This text based game follows three main paths labeled &quot;Career Suicide,&quot; &quot;Going Insane,&quot; and &quot;Fulfilment&quot;, symbolic of Stefan&#39;s own sanity and career success along the various paths. The Fulfillment path offers some insight into an analysis of Bandersnatch in relevant terms from the course. The Going Insane path sticks more true to Stefan&#39;s mindset, while the career suicide path mimics what happens in Bandersnatch if you take the easy way out for many of the options. 
+
+The use of branching narratives like in //Bandersnatch// or this project is not a new idea. However it is one that rarely achieves the social recognition that //Bandersnatch// has. Emergent narratives provide authorship to their audience which inherently makes any playthrough of interactive media a form of adaptation(2). Engaging with the story for yourself provides a completely different experience than watching someone else make the decisions(3). Therefore branching narratives and adaptation theory go hand in hand as the decision maker becomes a key adaptor for any onlookers, as well as themselves. 
+
+[[Play Again?-&gt;The Assignment]]
+
+To see the Twine File that generated this website, checkout https://github.com/smlevorse/PaperBatch/
+
+References:
+
+(1) Cooper, Matthew. “What Is the Bandersnatch from the New Black Mirror Episode?” Manchester Evening News, 8 Jan. 2019, www.manchestereveningnews.co.uk/news/tv/what-bandersnatch-new-black-mirror-15610416.
+
+(2) Swartjes, Ivo. “Whose Story Is It Anyway? : How Improv Informs Agency and Authorship of Emergent Narrative.” 19 May 2010, doi:10.3990/1.9789036530040.
+
+(3) Aylett, Ruth, and Sandy Louchart. “Being There: Participants and Spectators in Interactive Narrative.” Lecture Notes in Computer Science Virtual Storytelling. Using Virtual Reality Technologies for Storytelling, pp. 117–128., doi:10.1007/978-3-540-77039-8_10.
+</tw-passagedata><tw-passagedata pid="11" name="Pull up A Theory of Adaptation" tags="" position="177,576" size="100,100">You pull up your textbook, now invigorated by the challenge before you. You Have so many ideas you don&#39;t know where to start. You put your fingers to the keyboard and let the words flow out.
 
 (set: $essay_started to true)
 [[Write about modes of engagement-&gt;Modes Of Engagement]]
@@ -83,15 +98,16 @@ Before you can finish your essay, the [[front door opens-&gt;Party Time]].</tw-p
 [[Unleash your inner Stefan Butler and put an end to the party-&gt;Murder Most Foul]].
 
 (if:not $essay_started)[ [[Get in your car and drive away-&gt;Go insane]].
+
 [[Decide to put noise cancelling headphones on and sleep it off-&gt;Career Suicide]]. ]
-(if: $essay_started)[ [[Talk to your roommate about limiting the noise and return to your essay-&gt;Finishing up]] ]</tw-passagedata><tw-passagedata pid="16" name="Murder Most Foul" tags="" position="683,848" size="100,100">You sneak downstairs and grab a knife from the kitchen. At the top of the stairs, you knock on your roommate&#39;s door. The moment she opens it you charge in and unleash your fury. It&#39;s their fault you&#39;re struggling with your paper. Their indulgence is your hinderance. You have no regrets as you pierce their hearts, slice their carotid arteries, and leave them to bleed out as you return to your room. 
+(if: $essay_started)[ [[Talk to your roommate about limiting the noise and return to your essay-&gt;Fulfillment]] ]</tw-passagedata><tw-passagedata pid="16" name="Murder Most Foul" tags="" position="683,848" size="100,100">You sneak downstairs and grab a knife from the kitchen. At the top of the stairs, you knock on your roommate&#39;s door. The moment she opens it you charge in and unleash your fury. It&#39;s their fault you&#39;re struggling with your paper. Their indulgence is your hinderance. You have no regrets as you pierce their hearts, slice their carotid arteries, and leave them to bleed out as you return to your room. 
 
 (set: $murderer to &quot;You are arrested two days later in conjunction with the mass murder of seven RIT students.&quot;)
-[[You sit down and continue with your essay-&gt;Finishing up]].</tw-passagedata><tw-passagedata pid="17" name="Go insane" tags="" position="983,1040" size="100,100">You send one final text to the people you love, you are not cut out for this timeline. You tell them you&#39;ll see them in another life. You hop in your car, head west on the thruway, and drive until your heart&#39;s content. You are never heard from again. 
+[[You sit down and continue with your essay-&gt;Fulfillment]].</tw-passagedata><tw-passagedata pid="17" name="Go insane" tags="" position="983,1040" size="100,100">You send one final text to the people you love, you are not cut out for this timeline. You tell them you&#39;ll see them in another life. You hop in your car, head west on the thruway, and drive until your heart&#39;s content. You are never heard from again. 
 
 [[Writeup]] 
 
-[[Play Again-&gt;The Assignemnt]] </tw-passagedata><tw-passagedata pid="18" name="Finishing up" tags="" position="551,1057" size="100,100">You write the final sentence of your essay as a wave of relief washes over you. You did it. The assignment is complete. Now you can relax and enjoy the accomplishment you have been working towards for the past five years. The dropbox submission receipt pops up in your inbox. Everything is good.
+[[Play Again-&gt;The Assignment]] </tw-passagedata><tw-passagedata pid="18" name="Fulfillment" tags="" position="551,1057" size="100,100">You write the final sentence of your essay as a wave of relief washes over you. You did it. The assignment is complete. Now you can relax and enjoy the accomplishment you have been working towards for the past five years. The dropbox submission receipt pops up in your inbox. Everything is good.
 
 The next day, you check your grades. Next to Media Adaptation you see the fruits of your labor: A
 
@@ -99,7 +115,7 @@ $murderer
 
 [[Writeup]] 
 
-[[Play Again-&gt;The Assignemnt]] </tw-passagedata><tw-passagedata pid="19" name="Modes Of Engagement" tags="" position="443,765" size="100,100">You decide you want to work around the modes of engagement. //Bandersnatch// exists in a traditinally cold medium, however it uses an interactive mode of engagement. If you just sit there and let the default decisions play out, you get stuck in a loop right away. The show forces you to interact in order for there to be a story. 
+[[Play Again-&gt;The Assignment]] </tw-passagedata><tw-passagedata pid="19" name="Modes Of Engagement" tags="" position="443,765" size="100,100">You decide you want to work around the modes of engagement. //Bandersnatch// exists in a traditinally cold medium, however it uses an interactive mode of engagement. If you just sit there and let the default decisions play out, you get stuck in a loop right away. The show forces you to interact in order for there to be a story. 
 
 The story itself is about adapting a choose your own adventure book into a game. There is even a branch where the story is revealed to be an adaptation of the story of adaptiong the book. //Bandersnatch// manages to capture three mediums that traditionally span all three modes of engagement (book, movie, and game) and unite them across one interactive mode of engagement. 
 
@@ -107,7 +123,7 @@ As you work towards supporting your thesis and digesting what the interactive mo
 
 Just then you hear your roommate come home with a party full of people. You
 
-[[Ignore the party and finish your essay-&gt;Finishing up]].
+[[Ignore the party and finish your essay-&gt;Fulfillment]].
 
 [[Get distracted by the noise-&gt;Party Time]].</tw-passagedata><tw-passagedata pid="20" name="Palimpsests" tags="" position="251,797" size="100,100">In peeling apart the layers of the narrative, you realize that there is more than one palimpsest to this story. The Bandersnatch itself is a creature from Lewis Carroll&#39;s //Through the Looking Glass// and &quot;The Hunting of the Snark.&quot; The creature is known for its snapping jaws, and is possibly known for targeting leaders, as &quot;bander&quot; is an archaic term for leader. This applies to the Netflix series as Stefan&#39;s work ultimately becomes his own undoing in any branch that puts him ahead. 
 
@@ -117,13 +133,13 @@ Beyond Lewis Carroll&#39;s work, however, as an avid fan of //Black Mirror//, yo
 
 You tie together all of these points into a cohesive argument that you know Julie will enjoy while she&#39;s grading. 
 
-[[Finish the paper-&gt;Finishing up]]</tw-passagedata><tw-passagedata pid="21" name="Who" tags="" position="77,804" size="100,100">As you recall Stefan&#39;s struggles to understand his situation and the source of his decisions, you are reminded of class discussions about //who// is the adaptor. Specifically, with a branching narrative, the audience plays a bigger role in defining the end adaptation. In class you talked about how every person involved in producing an adaptation could potentially be an adaptor, including the person consuming the adaptation. 
+[[Finish the paper-&gt;Fulfillment]]</tw-passagedata><tw-passagedata pid="21" name="Who" tags="" position="77,804" size="100,100">As you recall Stefan&#39;s struggles to understand his situation and the source of his decisions, you are reminded of class discussions about //who// is the adaptor. Specifically, with a branching narrative, the audience plays a bigger role in defining the end adaptation. In class you talked about how every person involved in producing an adaptation could potentially be an adaptor, including the person consuming the adaptation. 
 
 In this case, every decision you made for Stefan was you defining the story. The final narrative is a result of your decisions. Therefore, you must acknowledge that you are, in fact, one of the main adaptors of the film you just watched. 
 
 You spend the night pumping out 1800 glorious words explaining why we all are adaptors in our every day lives. 
 
-[[Finish the essay-&gt;Finishing up]]</tw-passagedata></tw-storydata>
+[[Finish the essay-&gt;Fulfillment]]</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
